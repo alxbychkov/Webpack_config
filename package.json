@@ -1,0 +1,60 @@
+{
+  "name": "webpack_config",
+  "version": "1.0.0",
+  "description": "Webpack config",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --mode development --open 'Chrome'",
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "watch": "cross-env NODE_ENV=development webpack --mode development --watch"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alxbychkov/Webpack_config.git"
+  },
+  "keywords": [
+    "webpack",
+    "github",
+    "config"
+  ],
+  "author": "Bychkov A. <alx.bychkov@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alxbychkov/Webpack_config/issues"
+  },
+  "homepage": "https://github.com/alxbychkov/Webpack_config#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.0",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.3",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.1.1",
+    "eslint": "^7.5.0",
+    "eslint-loader": "^4.0.2",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "less-loader": "^6.2.0",
+    "loadash": "^1.0.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.0.8",
+    "webpack": "^4.44.1",
+    "webpack-bundle-analyzer": "^3.8.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.10.4",
+    "lodash": "^4.17.19"
+  }
+}
